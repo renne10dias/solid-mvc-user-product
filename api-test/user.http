@@ -1,0 +1,14 @@
+###
+GET http://localhost:8000/user
+
+###
+GET http://localhost:8000/userforproducts
+
+###
+POST http://localhost:8000/user
+Content-Type: application/json
+
+{
+    "name":"Michelzinho"
+}
+

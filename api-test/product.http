@@ -1,0 +1,36 @@
+###
+GET http://localhost:8000/products
+
+###
+POST http://localhost:8000/products/f2145616-442e-45a0-ac5d-21079faf462b/create
+Content-Type: application/json
+
+{
+    "name":"Salada de frutas",
+    "price":5.0
+}
+
+###
+POST http://localhost:8000/products/create
+Content-Type: application/json
+
+{
+    "name":"Produto 2",
+    "price":20.2
+}
+
+###
+POST http://localhost:8000/products/774bb0ca-f445-4c24-aae2-2dd4e9b748c2/buy
+Content-Type: application/json
+
+{
+    "amount":100
+}
+
+###
+POST http://localhost:8000/products/774bb0ca-f445-4c24-aae2-2dd4e9b748c2/sell
+Content-Type: application/json
+
+{
+    "amount":225
+}
